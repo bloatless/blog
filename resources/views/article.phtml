@@ -1,0 +1,17 @@
+<!-- extends "default" -->
+<article class="article type-default">
+    <header>
+        <?php if (!empty($article->image)): ?>
+            <div class="article-image">
+                <img src="<?php $this->out($article->image); ?>" class="full-width">
+            </div>
+        <?php endif; ?>
+        <h1><?php $this->out($article->title); ?></h1>
+        <div class="article-meta">
+            published on <?php $this->out($article->date); ?> by <?php $this->out($article->author); ?>
+        </div>
+    </header>
+    <div class="entry-content">
+        <?php $this->out($article->content, false); ?>
+    </div>
+</article>

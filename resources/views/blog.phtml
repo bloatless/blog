@@ -1,0 +1,19 @@
+<!-- extends "default" -->
+<article class="page">
+    <h1>Blog</h1>
+
+    <?php foreach ($articles as $year => $yearArticles): ?>
+        <p><strong><?php $this->out($year); ?></strong></p>
+        <ul class="article-list">
+            <?php foreach ($yearArticles as $article): ?>
+            <li>
+                <a href="<?php $this->url('article', ['slug' => $article->slug]); ?>">
+                    <?php $this->out($article->title); ?>
+                </a>
+                <?php $this->out($article->icons, false); ?>
+                <small><?php echo date('Y-m-d', strtotime($article->date)); ?></small>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+    <?php endforeach; ?>
+</article>

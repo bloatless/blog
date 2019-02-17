@@ -1,0 +1,12 @@
+<!-- extends "default" -->
+<div class="not-found">
+    <div class="sad">:(</div>
+    <p>Error: Something went wrong.</p>
+    <pre>
+        <code class="language-text">
+        File: <?php $this->out($file); ?>
+        Line: <?php $this->out($line); ?>
+        Message: <?php $this->out($message); ?>
+        </code>
+    </pre>
+</div>

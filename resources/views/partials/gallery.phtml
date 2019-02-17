@@ -1,0 +1,7 @@
+<div class="image-gallery">
+    <?php foreach ($images as $image): ?>
+    <a href="<?php echo $path_gallery . $image; ?>" class="lightbox">
+        <img src="/image/180x150<?php echo $path_gallery . $image; ?>">
+    </a>
+    <?php endforeach; ?>
+</div>

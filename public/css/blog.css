@@ -1,0 +1,177 @@
+body {
+	background-color: #f5f6f6;
+	color: #424242;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+}
+body > .content {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 780px;
+}
+
+/** Navbar **/
+.topnav {
+	background-color: #eee;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 50px;
+}
+.topnav:after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+.topnav ul {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 780px;
+	color: #696969;
+	list-style-type: none;
+}
+.topnav ul li {
+	display: block;
+	float: left;
+}
+.topnav ul li.active {
+	background-color: #ddd;
+}
+.topnav ul li a {
+	display: block;
+	color: #696969;
+	text-decoration: none;
+	padding: 10px;
+}
+.topnav ul li a:hover {
+	color: #2b2b2b;
+}
+.topnav ul li.first a {
+	padding-left: 0;
+	font-weight: bold;
+}
+.topnav ul li.last {
+	float: right;
+}
+.topnav ul li.last a {
+	padding: 0;
+	display: inline-block;
+}
+.topnav ul li.last svg {
+	padding: 7px 2px 6px 2px;
+	height: 24px;
+}
+
+/** Blog **/
+.article-meta {
+	font-size: 0.875em;
+	font-style: italic;
+	color: #696969;
+}
+article.article pre {
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	background-color: #f6f8fa;
+	font-size: 0.875em;
+}
+.content article.page,
+article.article {
+	margin-bottom: 40px;
+	padding: 1px 15px 20px 15px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+article.article .article-image {
+	margin: -1px -15px 0 -15px;
+}
+article.article .article-image img {
+	border-bottom: 5px solid #57ad68;
+}
+article.article img {
+	max-width: 100%;
+}
+
+.article-list li {
+	margin-bottom: 5px;
+}
+.article-list small {
+	display: block;
+	line-height: 10px;
+	font-size: 11px;
+	color: rgba(66,66,66,0.8);
+}
+
+/** Footer **/
+div.footer {
+	text-align: center;
+	font-size: 0.6875em;
+}
+
+/** Fullpage/Home **/
+body.fullpage {
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+body.fullpage article.page {
+	text-align: center;
+}
+
+
+/** Misc **/
+img.centered {
+	margin: 0 auto;
+	display: block;
+}
+img.full-width {
+	width: 100%;
+}
+
+/** Links **/
+a {
+	color: #57AD68;
+	text-decoration: none;
+}
+a:hover {
+	color: #57AD68;
+	text-decoration: underline;
+}
+a.btn {
+	background-color: #57ad68;
+	color: #fff;
+	border-radius: 3px;
+	padding: 5px 10px;
+	font-size: 0.875em;
+}
+a.btn:hover {
+	background-color: #439f55;
+	text-decoration: none;
+}
+a.thumb-left img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+a.thumb-right img {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+/** Image Galleries **/
+.image-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+/** Not Found **/
+.not-found {
+	text-align: center;
+	margin-bottom: 80px;
+}
+.not-found .sad {
+	font-size: 3em;
+	transform: rotate(80deg);
+}

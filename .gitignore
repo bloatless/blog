@@ -1,0 +1,16 @@
+# Eclipse/PDT
+/.settings/
+/.buildpath
+/.project
+
+# PhpStorm
+.idea
+
+# Netbeans
+/nbproject/
+
+# VIM
+*.swp
+
+# OSX
+**.DS_Store
