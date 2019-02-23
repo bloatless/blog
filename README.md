@@ -1,10 +1,11 @@
-<p align="center>
+<p align="center">
     <img src="https://bloatless.org/img/logo.svg" width="60px" height="80px">
-    <h1>Bloatless Blog</h1>
 </p>
 
-Bloatless blog is a minimal and simple blog application written in PHP. It is markdown based so new articles
-can be published by simply uploading a new text file to your server.
+<h1 align="center">Bloatless Blog</h1>
+
+<p align="center">Bloatless blog is a minimal and simple blog application written in PHP. It is markdown based so new articles
+can be published by simply uploading a new text file to your server.</p>
 
 ## Features
 
