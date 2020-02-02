@@ -783,7 +783,7 @@ class Blog
                 break;
             case 'image/png':
                 imagesavealpha($imgThumb, true);
-                imagepng($imgThumb, $pathToTarget, round(9 * self::THUMB_QUALITY / 100));
+                imagepng($imgThumb, $pathToTarget, (int) round(9 * self::THUMB_QUALITY / 100));
                 break;
             case 'image/webp':
                 imagesavealpha($imgThumb, true);
