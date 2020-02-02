@@ -115,6 +115,7 @@ class Blog
     protected function route(): array
     {
         $requestUri = $_SERVER['REQUEST_URI'] ?? '';
+        $requestUri = parse_url($requestUri, PHP_URL_PATH);
         $page = null;
         foreach ($this->pageConfigs as $pageId => $pageConfig) {
             $pattern = $pageConfig['parse_pattern'];
